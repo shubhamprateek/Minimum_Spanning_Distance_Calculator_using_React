@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1d1d1d;
+  color: #fff;
+}
+
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  animation: color-change 10s infinite;
+}
+
+@keyframes color-change {
+  0% {
+    color: #fff;
+  }
+  50% {
+    color: #00ff00;
+  }
+  100% {
+    color: #fff;
+  }
+}
+
+input[type="text"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #444;
+  color: #fff;
+  width: 100%;
+  animation: border-change 5s infinite;
+}
+
+@keyframes border-change {
+  0% {
+    border-color: #ff0000;
+  }
+  50% {
+    border-color: #00ff00;
+  }
+  100% {
+    border-color: #ff0000;
+  }
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #00ff00;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background-color: #fff;
+  color: #00ff00;
+}
+
+.result {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #444;
+  animation: background-change 10s infinite;
+}
+
+@keyframes background-change {
+  0% {
+    background-color: #444;
+  }
+  50% {
+    background-color: #ff0000;
+  }
+  100% {
+    background-color: #444;
+  }
+}
+
+.result p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.result span {
+  font-weight: bold;
+}
